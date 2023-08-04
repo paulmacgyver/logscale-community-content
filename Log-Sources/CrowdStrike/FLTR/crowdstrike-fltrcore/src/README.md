@@ -10,19 +10,20 @@ If both packages are mistakenly installed in the FLTR repo, go to `Alerts -> Sch
 
 ## Setup Instructions
 
-Detailed setup instructions with screenshots can be found here:
-
-https://github.com/CrowdStrike/logscale-community-content/wiki/FLTR-Setup-and-Configuration
-
-It is highly recommended that you follow these steps after installing this package. 
+Follow the [package setup instructions](https://github.com/CrowdStrike/logscale-community-content/wiki/FLTR-Setup-and-Configuration) to get going. It is highly recommended that you follow these steps after installing this package.
 
 ## Changelog
 
+Version 1.3.8
+- Added the missing recon_apps.csv file and associated references. 
+
 Version 1.3.7
-- Changed the MITRE content to weight the values around severity.
+- Changed the MITRE content to weigh the values around severity instead of just count. 
 - Added "Search - Acquire Host Details" to the dashboards and interactions. 
 - Added "Audit - Falcon UI Audit Logs" to monitor your Falcon audit logs from FLTR.
 - Fixed a typo in the Linux health dashboard. 
+- Bumped the minimum LogScale version to 1.96.0 to match released features.
+- Added several example alerts. 
 
 Version 1.3.6
 - Enabled "Require user input before searching" for most of the dashboards. You can use `*` as an input if needed. 
@@ -32,7 +33,8 @@ Version 1.3.6
 - Renamed the "Windows" dashboards to put them under the "OS" category. 
 - Renamed a large number of saved queries to make the description more accurate. 
 - Added a `zUsbNormalize()` user function to normalize USB events to human-readable names. 
-- Added new queries from other internal packages. 
+- Added new queries from other internal packages.
+- Bumps minimum required version of LogScale to 1.85.
 
 Version 1.3.5
 - Added the query name as a comment at the beginning of each query. 
